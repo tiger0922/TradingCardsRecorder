@@ -1,0 +1,52 @@
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+p {
+  text-align: center;
+  margin-top: 30px;
+}
+.card {
+  margin: 10px;
+  height: 120px;
+}
+.errorlist {
+  display: none;
+}
+label {
+  display: none;
+}
+#id_piece {
+  width: 100%;
+  text-align: center;
+}
+.Nayeon {
+  background-color: #80caf1;
+}
+.Jeongyeon {
+  background-color: #bcd776;
+}
+.Momo {
+  background-color: #f8cfd7;
+}
+.Sana {
+  background-color: #9c9ecf;
+}
+.Jihyo {
+  background-color: #fac857;
+}
+.Mina {
+  background-color: #6fc5c2;
+}
+.Dahyun {
+  background-color: #ffffff;
+}
+.Chaeyoung {
+  background-color: #e81933;
+}
+.Tzuyu {
+  background-color: #016cba;
+}
+.ALL {
+  background-color: #ff5fa2
+}

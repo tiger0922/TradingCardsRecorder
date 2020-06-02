@@ -1,0 +1,40 @@
+{% extends 'cards/base.html' %}
+
+{% block content %}
+
+{% for i in cards_list %}
+  <div class="row justify-content-center">
+  {% for j in i %}
+    <div class="col-lg-1 col-4 align-items-center">
+        <span class="card {{ j.member }}">
+          <p>{{ j.number }}</p>
+        <div class="form-group col">
+            <form method="post" id="card_{{ forloop.counter1 }}">
+            {% load index %}
+            {{ formlist|index:j.number }}
+            </form>
+        </div>
+      </span>
+    </div>
+  {% endfor %}
+  </div>
+{% endfor %}
+<div class="row justify-content-center">
+  <div class="col-lg-1 offset-lg-3 col-4 offset-4 align-items-center">
+    <span class="card ALL">
+      <p>{{ last_card.number }}</p>
+      <div class="form-group col">
+        <form method="post">
+            {% csrf_token %}
+            {{ formlist.100 }}
+        </form>
+      </div>
+    </span>
+  </div>
+  <div class="col-lg-3 col-4">
+    <button id = "submit_btn" type="submit" class="btn btn-primary" style="margin-top: 95px">Submit</button>
+  </div>
+</div>
+
+{% endblock %}
+
